@@ -1,14 +1,14 @@
 
 # SITTA UT - Stock and Tracking Management
 
-A simple app HTML, CSS, and JS based. Simple Vue3 using CDN for stock and tracking management. This repository is made for completement Website Programming Course Universitas Terbuka. Feel free if you want to clone this repo.
+A simple app HTML, CSS, and JS based. This repository is made for completement Website Programming Course Universitas Terbuka. Feel free if you want to clone this repo.
 
 
 
 
 ## Tech Stack
 
-**Frontend:** HTML, CSS, JS, Vue3 (CDN)
+**Frontend:** HTML, CSS, JS
 
 
 ## Installation
@@ -16,7 +16,7 @@ A simple app HTML, CSS, and JS based. Simple Vue3 using CDN for stock and tracki
 **Clone this repo**
 
 ```bash
-git clone https://github.com/mfazahanif/fe-sitta-ut.git
+git clone https://github.com/rizkyagung18/sitta-praktik.git
 ```
 
 **Run project**
@@ -37,10 +37,6 @@ siti123
 doni@ut.ac.id
 doni123
 
-admin@ut.ac.id
-admin123
+rizky@ut.ac.id
+rizky123
 ```
-## Features
-
-- Displays dashboard with greeting by time.
-- Stock and tracking management using VueJS
