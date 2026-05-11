@@ -151,45 +151,97 @@ input {
 
 /* Tracking */
 .tracking-container {
-    max-width: 75%;
+    max-width: 500px;
     margin: 20px auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* text-align: center; */
-}
-.tracking-container label {
-    text-align: left;
-}
-
-.paket-detail {
-    margin: -20px 0 20px 0;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-.paket-detail ol {
-    text-align: left;
-    margin-left: 20px;
-}
-.paket-detail h4, .paket-detail p, .paket-detail ol, .paket-detail li {
-    margin-bottom: 10px;
-    color: #1b1b1b;
-}
-
-.tracking-table {
-    animation: fadeIn 0.5s ease-in-out;
-    max-width: 75%;
-    margin: auto;
-}
-
-.tracking-table h3 {
     text-align: center;
-    margin-bottom: 15px;
-    color: #1b1b1b;
 }
+
+.tracking-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    margin: 25px auto;
+    animation: fadeIn 0.5s ease;
+}
+
+.tracking-card h3 {
+    text-align: center;
+    color: #1b3c74;
+    margin-bottom: 15px;
+}
+
+.tracking-info p {
+    margin: 6px 0 10px 0;
+    font-size: 15px;
+}
+
+.tracking-info {
+    margin-bottom: 32px;
+}
+
+.status {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.timeline {
+    list-style: none;
+    position: relative;
+    margin: 20px 0 0 0;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #1b6dc1;
+    border-radius: 10px;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -19.5px;
+    top: -9px;
+    width: 12px;
+    height: 12px;
+    background: #1b6dc1;
+    border-radius: 50%;
+}
+
+/* .timeline-info {
+    margin-top: 20px;
+} */
+
+.timeline-time {
+    display: block;
+    color: #1b6dc1;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.timeline-text {
+    background: #f0f6ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -203,91 +255,6 @@ input {
 }
 
 /* Stock */
-div:where(.swal2-container) input:where(.swal2-input), div:where(.swal2-container) input:where(.swal2-file), div:where(.swal2-container) textarea:where(.swal2-textarea), div:where(.swal2-container) select:where(.swal2-select) {
-    width: 100% !important;
-    box-sizing: border-box !important;
-    margin: 10px 0 !important;
-    font-size: smaller !important;
-}
-.select-filter {
-    display: flex;
-    align-items: center;
-}
-
-div .filter-container input[type="checkbox"], .date-do input[type="date"] {
-    width: auto !important;
-    margin-right: 8px !important;
-}
-
-.filter-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-div:where(.filter-container) select, .date-do input[type="date"] {
-    appearance: none;
-    border: 0;
-    outline: 0;
-    background: none;
-    color: inherit;
-    box-shadow: none;
-}
-
-.filter-container h4 {
-    margin-right: 10px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-div:where(.filter-container) select, .reset-filter-btn, .date-do input[type="date"] {
-    background-color: #d9d8d4;
-    color: #29303B;
-    font-weight: 600;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-div:where(.filter-container) select:hover, .reset-filter-btn:hover,  .date-do input[type="date"]:hover {
-    background-color: #bfbeb9;
-}
-
-.warning {
-    color: #ffd500;
-    font-weight: bold;
-}
-.danger {
-    color: #f44336;
-    font-weight: bold;
-}
-.success {
-    color: #4caf50;
-    font-weight: bold;
-}
-
-.edit {
-    background-color: #ffd500;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.delete {
-    background-color: #f44336;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .container h2 {
     margin-top: 25px;
 }
@@ -298,7 +265,6 @@ div:where(.filter-container) select:hover, .reset-filter-btn:hover,  .date-do in
 }
 
 table {
-    animation: fadeIn 0.5s ease-in-out;
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
